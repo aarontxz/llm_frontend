@@ -1,32 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { getConversations } from '../services/api';
+import React from 'react';
 
-const ConversationList = () => {
-  const [conversations, setConversations] = useState([]);
-
-  useEffect(() => {
-    fetchConversations();
-  }, []);
-
-  const fetchConversations = async () => {
-    try {
-      const data = await getConversations();
-      setConversations(data);
-    } catch (error) {
-      console.error('Error fetching conversations:', error);
-    }
-  };
-
+const ConversationList = ({ conversations, onStart, onDelete }) => {
   return (
     <div>
-      <h2>Conversations</h2>
-      <ul>
-        {conversations.map((conversation) => (
-          <li key={conversation.id}>
-            Conversation ID: {conversation.id}
-          </li>
-        ))}
-      </ul>
+      {conversations.map(conversation => (
+        <div key={conversation.id}>
+          <span>{conversation.id}</span>
+          <button onClick={() => onStart(conversation.id)}>Start</button>
+          <button onClick={() => onDelete(conversation.id)}>Delete</button>
+        </div>
+      ))}
     </div>
   );
 };
