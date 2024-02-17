@@ -1,0 +1,77 @@
+#conversation-list {
+    margin-top: 20px;
+}
+  
+#conversation-list h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+#conversation-list ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#conversation-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative; /* Ensure relative positioning for the delete button */
+    background-color: #adbaba; 
+}
+  
+#conversation-list strong {
+    font-weight: bold;
+}
+  
+.input-wrapper {
+    display: flex;
+    width: 100%;
+}
+  
+.input-wrapper input[type="text"] {
+    flex: 1; /* Grow to fill available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Add margin to the right */
+}
+  
+.input-wrapper button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px; /* Add margin to the left */
+}
+  
+.input-wrapper button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+  
+#conversation-list button[id^="delete-button-"] {
+    position: absolute;
+    top: 10px; /* Position at the top */
+    right: 10px; /* Position at the right */
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+#conversation-list li .prompt {
+    background-color: #c6f88a; /* Default background color for prompts */
+}
+  
+#conversation-list li .response {
+    background-color: #f8aefc; /* Default background color for responses */
+}
+  
+  
