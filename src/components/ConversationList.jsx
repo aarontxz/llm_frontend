@@ -28,12 +28,11 @@ const ConversationList = ({ conversations, onStart, onDelete }) => {
 
   return (
     <div id="conversation-list">
-      <h2>The Conversation List</h2>
       <ul>
         {conversations.map((conversation) => (
           <li key={conversation.id}>
             <div>
-              <strong>ID:</strong> {conversation.id}
+              <strong>Conversation ID:</strong> {conversation.id}
               <button id={`delete-button-${conversation.id}`} onClick={() => onDelete(conversation.id)}>Delete</button>
             </div>
             <div>

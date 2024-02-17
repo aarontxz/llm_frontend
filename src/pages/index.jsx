@@ -93,7 +93,7 @@ const IndexPage = () => {
 
   return (
     <Container>
-      <h1>Conversation List</h1>
+      <h1>AI CHATBOTS</h1>
       <ConversationList
         conversations={conversations}
         onStart = {handleUpdateConversation}
