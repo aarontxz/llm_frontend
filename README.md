@@ -2,6 +2,9 @@
 
 This is a front-end component for chatting with a Large Language Model (LLM). It allows users to interact with the LLM, CRUD conversations, send prompts, display LLM properties, and update LLM properties.
 
+<img width="918" alt="llm_frontend" src="https://github.com/aarontxz/llm_frontend/assets/115057223/fda96b68-7724-43e9-9996-c99c9e41b83d">
+
+
 ## Requirements
 
 To run this project, you will need the following technologies:
