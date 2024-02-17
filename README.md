@@ -4,9 +4,6 @@ This is a front-end component for chatting with a Large Language Model (LLM). It
 
 <img width="918" alt="llm_frontend" src="assets/llm_frontend.png">
 
-<img width="918" alt="llm_frontend" src="https://github.com/aarontxz/llm_frontend/assets/115057223/fda96b68-7724-43e9-9996-c99c9e41b83d">
-
-
 ## Requirements
 
 To run this project, you will need the following technologies:
