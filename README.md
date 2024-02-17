@@ -1,6 +1,8 @@
 # LLM Frontend
 
-This is a front-end component for chatting with a Large Language Model (LLM). It allows users to interact with the LLM, CRUD conversations, send prompts, display LLM properties, and update LLM properties.
+This is a front-end component for chatting with a Large Language Model (LLM). It allows users to interact with the LLM hosted on llm_backend. 
+
+<img width="918" alt="llm_frontend" src="assets/llm_frontend.png">
 
 ## Requirements
 
